@@ -1,10 +1,6 @@
 # algoTrader
 
-Please note that I've decided to move the source code to another private repository. If you'd like to view/collaborate on the same, please feel free to reach out. 
-
-This page serves as an interface to my project where I attempt to describe my design approach and some high-level functions of the different components of the trading engine. 
-
-The trading engine is designed in a completely modular way with different layers handling different fucntions. The basic idea is to convert price/volume tick data listened from Zerodha Kite API to candle data and then compute some mathematical signals based on it. I tested a series of signals based on momentum and reversion and went live with two momentum signals that performed best as per my backtests. The investor layer of the engine then takes trading decisions based on these signals and relays it to the order manager which finally submits orders to the exchange using the same API. The investor layer currently also has a basic risk management component built in. 
+The trading engine is designed in a completely modular way with different layers handling different fucntions. The basic idea is to convert price/volume tick data listened from Zerodha Kite API to candle data and then compute some mathematical signals based on it. I tested a series of signals based on momentum and reversion and went live with two momentum signals that performed best as per my backtests. The investor layer of the engine takes trading decisions based on these signals and relays it to the order manager which finally submits orders to the exchange using the same API. The investor layer currently also has a basic risk management component built in. 
 
 Here is a brief description of the different layers used in this trading engine.
 
